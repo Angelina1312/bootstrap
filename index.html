@@ -4,35 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Bootstrap</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 <body>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-4">
-            <a href="#" class="text-secondary">Woman</a>
-            <a href="#" class="text-secondary">Man</a>
-            <a href="#" class="text-secondary">New</a>
-        </div>
-        <div class="col-4">
-            <h2>Nimes</h2>
-        </div>
-        <div class="col-4">
-            <div class="lupa_bg"></div>
-            <div class="cart_bg"></div>
-        </div>
-        </div>
+<div class="sticky-top">
+    <div class="container bg-l">
+        <div class="row bg-light">
+            <div class="col-4 font-weight-bold"> 
+            	 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Woman</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Man</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">New</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>                 
+            </div>
+        	<div class="col-4">
+            	<h2 class="d-flex justify-content-center">Nimes</h2>
+        	</div>
+        	<div class="col-4">
+            	<div class="lupa_bg"></div>
+            	<div class="cart_bg"></div>
+        	</div>
+        
         </div>
     </div>
+</div>    
 
     <div class="container">
-        <div class="row">
-        <div class="col-6">
-            <p class="font-weight-light d-flex justify-content-center">The quality you deserve</p>
-            <h1 class="text-uppercase d-flex justify-content-center">denim</h1>
+        <div class="row justify-content-center">
+        <div class="col-6 text-center mt-5">
+            <p class="font-weight-light">The quality you deserve</p>
+            <h1 class="text-uppercase">denim</h1>
             <button type="button" class="btn btn-dark">Check new collection</button>
         </div>
         <div class="col-6">
@@ -46,7 +63,7 @@
             <div class="col-6">
         <h2>Bestsellers</h2>
             </div>
-            <div class="col-6">
+            <div class="col-6 text-right">
         <a href="#" class="text-secondary">View all</a>
             </div>
         </div>
@@ -54,22 +71,22 @@
             <div class="col-3">
             <img src="img/boy_1.jpg" alt="jacket">
             <p>Jacket</p>
-            <p>$120</p>
+            <p class="font-weight-bold">$120</p>
         </div>
         <div class="col-3">
             <img src="img/girl_2.jpg" alt="overalls">
             <p>Overalls</p>
-            <p>$140</p>
+            <p class="font-weight-bold">$140</p>
         </div>
         <div class="col-3">
             <img src="img/girl_3.jpg" alt="jacket">
             <p>Jacket</p>
-            <p>$90</p>
+            <p class="font-weight-bold">$90</p>
         </div>
         <div class="col-3">
             <img src="img/girl_4.jpg" alt="overalls">
             <p>Overalls</p>
-            <p>$160</p>
+            <p class="font-weight-bold">$160</p>
         </div>
     </div>
     </div>
@@ -80,7 +97,7 @@
             <div class="col-6">
         <h2>News</h2>
     </div>
-    <div class="col-6">
+    <div class="col-6 text-right">
         <a href="#" class="text-secondary">View all</a>
     </div>
     </div>
@@ -102,7 +119,7 @@
             <div class="col-6">
         <h2>Shop by category</h2>
     </div>
-    <div class="col-6">
+    <div class="col-6 text-right">
         <a href="#" class="text-secondary">View all</a>
     </div>
         </div>
@@ -136,21 +153,23 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-1">
-        <a href="#">Shop</a>
+        <a href="#" class="text-secondary">Shop</a>
     </div>
     <div class="col-1">
-        <a href="#">Delivery</a>
+        <a href="#" class="text-secondary">Delivery</a>
     </div>
     <div class="col-1">
-        <a href="#">Service</a>
+        <a href="#" class="text-secondary">Service</a>
     </div>
     <div class="col-1">
-        <a href="#">Sitemap</a>
+        <a href="#" class="text-secondary">Sitemap</a>
     </div>
     <div class="col-1">
-        <a href="#">Contacts</a>
+        <a href="#" class="text-secondary">Contacts</a>
     </div>
         </div>
     </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
